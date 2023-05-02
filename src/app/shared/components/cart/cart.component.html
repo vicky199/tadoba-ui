@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Your Shopping Cart</h2>
+<mat-dialog-content class="mat-typography" style="width:80vw !important">
+  <div *ngIf="cartData.length>0; else elseBlock">
+    <div style="display: flex;flex-direction: row;background-color: #fafafa;border-radius: 5px;">
+      <div *ngFor="let cart of cartData" style="width:70% !important">
+        <div><img src={{cart.ImagePath}} /></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div style="width:30% !important">
+        dfdfdgddg
+      </div>
+    </div>
+  </div>
+  <ng-template #elseBlock>
+    <div style="text-align: center;font-size: 14px;">Your cart is Empty.</div>
+  </ng-template>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close style="background: #2c7e63;color: white;">X</button>
+</mat-dialog-actions>

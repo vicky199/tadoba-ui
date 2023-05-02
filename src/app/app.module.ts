@@ -13,4 +13,4 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
